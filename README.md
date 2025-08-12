@@ -16,4 +16,4 @@ language:
 - **Developed by:** lammtfkday
 - **License:** apache-2.0
 - **Finetuned from model :** unsloth/Qwen3-0.6B-unsloth-bnb-4bit
-
+- **Finetuned from dataset :** 5CD-AI/Vietnamese-Multi-turn-Chat-Alpaca
