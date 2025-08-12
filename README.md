@@ -19,7 +19,7 @@ language:
 - **Finetuned from dataset :** 5CD-AI/Vietnamese-Multi-turn-Chat-Alpaca
 
 # How to use
-You can use this model by loading directedly from huggingface:
+**You can use this model by loading directedly from huggingface:**
 
 from transformers import AutoTokenizer, AutoModelForCausalLM
 
@@ -30,11 +30,10 @@ messages = [
 ]
 inputs = tokenizer.apply_chat_template(
 	messages,
-	add_generation_prompt=True,
+ 	add_generation_prompt=True,
 	tokenize=True,
 	return_dict=True,
 	return_tensors="pt",
-).to(model.device)
-
+ ).to(model.device)
 outputs = model.generate(**inputs, max_new_tokens=40)
 print(tokenizer.decode(outputs[0][inputs["input_ids"].shape[-1]:]))
