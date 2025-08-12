@@ -19,8 +19,11 @@ language:
 - **Finetuned from dataset :** 5CD-AI/Vietnamese-Multi-turn-Chat-Alpaca
 
 # How to use
-**You can use this model by loading directedly from huggingface:**
+**You can use this model by loading directly from huggingface:**
+
 from transformers import AutoTokenizer, AutoModelForCausalLM
+
 tokenizer = AutoTokenizer.from_pretrained("lammtfkday/Vnchatbot-using-qwen3")
+
 model = AutoModelForCausalLM.from_pretrained("lammtfkday/Vnchatbot-using-qwen3")
 
