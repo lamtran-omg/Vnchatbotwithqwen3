@@ -20,6 +20,7 @@ language:
 
 # How to use
 You can use this model by loading directedly from huggingface:
+
 from transformers import AutoTokenizer, AutoModelForCausalLM
 
 tokenizer = AutoTokenizer.from_pretrained("lammtfkday/Vnchatbot-using-qwen3")
